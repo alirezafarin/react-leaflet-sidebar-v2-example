@@ -9,9 +9,23 @@ export default function Sidebar() {
     {
       id: "userInfo",
       tab: '<i style="font-size: large" class="fa fa-user"></i>',
-      pane: "User Info Content",
+      pane: "User Info Tab Content",
       title: "Your Profile",
       position: "top",
+    },
+    {
+      id: "settings",
+      tab: '<i style="font-size: large" class="fa fa-gear"></i>',
+      pane: "Settings Tab Content",
+      title: "Settings Tab",
+      position: "top",
+    },
+    {
+      id: "github",
+      tab: '<i style="font-size: large" class="fa fa-github"></i>',
+      pane: "Github Tab Content",
+      title: "Github Info",
+      position: "bottom",
     },
   ];
   useV2Sidebar(map, panels);
