@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { useMap } from "react-leaflet";
 import { useV2Sidebar, V2SidebarPanels } from "./sidebarV2";
 
-function Map() {
+export default function Sidebar() {
   const map = useMap();
   const panels: V2SidebarPanels = [
     {
@@ -14,10 +14,7 @@ function Map() {
       position: "top",
     },
   ];
-
   useV2Sidebar(map, panels);
 
   return <Fragment></Fragment>;
 }
-
-export default Map;

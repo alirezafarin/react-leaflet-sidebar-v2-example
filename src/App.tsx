@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import "./App.css";
-import Map from "./components/Map";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       maxZoom={18}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Map />
+      <Sidebar />
     </MapContainer>
   );
 }
