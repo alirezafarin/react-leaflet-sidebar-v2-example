@@ -1,11 +1,11 @@
 import "font-awesome/css/font-awesome.min.css";
 import { Fragment } from "react";
 import { useMap } from "react-leaflet";
-import { useV2Sidebar, V2SidebarPanels } from "./sidebarV2";
+import { useV2Sidebar, V2SidebarPanelsType } from "./sidebarV2";
 
 export default function Sidebar() {
   const map = useMap();
-  const panels: V2SidebarPanels = [
+  const panels: V2SidebarPanelsType = [
     {
       id: "userInfo",
       tab: '<i style="font-size: large" class="fa fa-user"></i>',

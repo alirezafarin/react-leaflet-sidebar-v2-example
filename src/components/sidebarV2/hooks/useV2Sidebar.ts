@@ -2,12 +2,12 @@ import React from "react";
 import L from "leaflet";
 import "leaflet-sidebar-v2";
 import "leaflet-sidebar-v2/css/leaflet-sidebar.css";
-import { V2SidebarConfigs, V2SidebarPanels } from "../types";
+import { V2SidebarConfigsType, V2SidebarPanelsType } from "../types";
 
 export default function useV2Sidebar(
   map: L.Map,
-  panels: V2SidebarPanels = [],
-  configs: V2SidebarConfigs = {
+  panels: V2SidebarPanelsType = [],
+  configs: V2SidebarConfigsType = {
     autopan: true,
     closeButton: true,
     container: "",

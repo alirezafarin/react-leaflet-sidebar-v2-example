@@ -1,4 +1,4 @@
-export interface V2SidebarConfigs {
+export interface V2SidebarConfigsType {
   /**
    * - whether to maintain the centered map point when opening the sidebar
    */
@@ -17,7 +17,7 @@ export interface V2SidebarConfigs {
   position: "left" | "right";
 }
 
-export interface V2SidebarPanel {
+export interface V2SidebarPanelType {
   /**
    * - UID, used to access the panel
    */
@@ -40,4 +40,4 @@ export interface V2SidebarPanel {
   position: "top" | "bottom";
 }
 
-export type V2SidebarPanels = V2SidebarPanel[];
+export type V2SidebarPanelsType = V2SidebarPanelType[];
