@@ -1,7 +1,7 @@
 import "font-awesome/css/font-awesome.min.css";
 import { Fragment } from "react";
 import { useMap } from "react-leaflet";
-import { useV2Sidebar, V2SidebarPanelsType } from "./sidebarV2";
+import { useV2Sidebar, V2SidebarPanelsType } from "react-leaflet-v2-sidebar";
 
 export default function Sidebar() {
   const map = useMap();
